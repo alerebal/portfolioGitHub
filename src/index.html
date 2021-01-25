@@ -18,36 +18,61 @@
         <p>Javascript web developer</p>
       </div>
     </section>
+    <div class="anchor" id="aboutMe"></div>
+    <nav>
+        <div>
+            <ul>
+                <li onclick="toScroll('header')">AleRebal</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li onclick="toScroll('aboutMe')">About me</li>
+                <li onclick="toScroll('myProjects')">Projects</li>
+                <li onclick="toScroll('myStudies')">Studies</li>
+            </ul>
+        </div>
+    </nav>
 
     <section class="text-center" id="myInfo">
       <h2>About me</h2>
       <div class="split">
         <div>
+          <h4>Discovering Javascript</h4>
           <p>
-            I studied a professional cycle of Telecommunications and IT Systems in Spain. It was from 2010 to 2013, but my situation and the country work moment did not allow me to work in this field as I wanted.
+            I studied a professional cycle of Telecommunications and IT Systems in Spain. It was from 2010 to 2013.
             In 2018 I started studying again, online on the Open Webinars platform, I was focused on networks, and that is when I discovered programming.
+            After studying basic programming and looking for a language I like, I took a Javascript course in 2019 on the Udemy platform at the beginning and I have been studying a lot since then in different places.
           </p>
         </div>
         <div>
+          <h4>What I like about Javascript</h4>
           <p>
-            After studying basic programming and looking for a language I like, I took a Javascript course in 2019 on the Udemy platform and recently finished it
+            I enjoy solving challenges, I like to find a way to obtain a satisfactory result.
+            Javascript is very versatile, I can use it both in backend and frontend, O.O.P and functional programming (learning FP is one of my goals in the future). Javascript is everywhere and as a developer you must know it.
+            I like working with Angular as a framework, I still have a lot to learn about it. I also like to work with pure Javascript.
+            I am still learning about the different methods and every day I learn something new.
           </p>
         </div>
         <div>
+          <h4>In my life I enjoy</h4>
           <p>
-            I like working with Angular, I am starting to work with Typecript with Node from the backend. I know that I have to improve and continue studying, and I will. I like to study and I know that in this field it is something basic.
+            I love music most of all, I am a bass player. I like nature, walking, discovering culture, places and people. 
+            I recently discovered meditation, it was very important to me, it changed my life. I try to practice it daily.
+            I am Argentinian, I have been living in Spain and currently I live in Dublin.
           </p>
         </div>
       </div>
+      <div class="anchor" id="myProjects"></div>
     </section>
 
-    <section class="bg-dark">
+    <section class="bg-dark" >
       <h2 class="text-center">My projects</h2>
 
       <div class="container">
         <div class="split">
           <div>
-            <h3>Ecommerce store</h3>
+            <h3 id="ecommerce">Ecommerce store</h3>
             <p>
               In this project I started to learn about Stripe and applied it in
               a simple way. It does not work as I would like, I am trying to fix
@@ -67,22 +92,23 @@
                 alt="ecommerce photo"
               />
             </a>
+            <p class="paraImg"><span>MEAN and Stripe</span></p>
           </div>
         </div>
         <div class="links">
           <p>
             <a href="https://ecommerce-henna.vercel.app/" target="_blank"
-              ><span>Go to the page</span>
+              ><p>Go to the page</p>
             </a>
           </p>
           <p>
             <a href="https://github.com/alerebal/ecommerce" target="_blank"
-              ><span>Frontend code</span>
+              ><p>Frontend code</p>
             </a>
           </p>
           <p>
             <a href="https://github.com/alerebal/ecommerceBack" target="_blank"
-              ><span>Backend code</span>
+              ><p>Backend code</p>
             </a>
           </p>
         </div>
@@ -94,6 +120,7 @@
             <a href="https://recipes-front.vercel.app/" target="_blank">
               <img src="./assets/img/receipes.png" alt="vegetarian photo" />
             </a>
+            <p class="paraImg"><span>MEAN Stack</span> </p>
           </div>
           <div>
             <h3>Vegetarian recipes</h3>
@@ -112,17 +139,17 @@
         <div class="links">
           <p>
             <a href="https://recipes-front.vercel.app/" target="_blank"
-              ><span>Go to the page</span>
+              ><p>Go to the page</p>
             </a>
           </p>
           <p>
             <a href="https://github.com/alerebal/recipes-front" target="_blank"
-              ><span>Frontend code</span>
+              ><p>Frontend code</p>
             </a>
           </p>
           <p>
             <a href="https://github.com/alerebal/recipes-back" target="_blank"
-              ><span>Backend code</span>
+              ><p>Backend code</p>
             </a>
           </p>
         </div>
@@ -149,17 +176,18 @@
                 alt="notes photo"
               />
             </a>
+            <p class="paraImg"><span>Node and Mongo</span></p>
           </div>
         </div>
         <div class="links">
           <p>
             <a href="https://alerebal-notes-app.herokuapp.com/" target="_blank"
-              ><span>Go to the page</span>
+              ><p>Go to the page</p>
             </a>
           </p>
           <p>
             <a href="https://github.com/alerebal/notes" target="_blank"
-              ><span>Page code</span>
+              ><p>Page code</p>
             </a>
           </p>
         </div>
@@ -174,6 +202,7 @@
                     alt="ImgShare photo"
                   />
                 </a>
+                <p class="paraImg"><span>Node and Mongo</span></p>
           </div>
           <div>
             <h3>ImgShare</h3>
@@ -186,16 +215,56 @@
         <div class="links">
           <p>
             <a href="https://alerebal-img-share.herokuapp.com/" target="_blank"
-              ><span>Go to the page</span>
+              ><p>Go to the page</p>
             </a>
           </p>
           <p>
             <a href="https://github.com/alerebal/imgShare" target="_blank"
-              ><span>Page code</span>
+              ><p>Page code</p>
             </a>
           </p>
         </div>
       </div>
+      <div class="anchor" id="myStudies"></div>
+    </section>
+
+    <section class="bg-light" >
+        <div class="container">
+            <h2 class="text-center studies">Studies</h2>
+            <div class="split">
+                <div>
+                    <h4>JavaScript Algorithms and Data Structures</h4>
+                    <span>FreeCodeCamp</span>
+                    <p>Developer Certification, representing approximately 300 hours of coursework</p>
+                    <span>2020</span>
+                </div>
+                <div>
+                    <h4>Master Javascript</h4>
+                    <span>Udemy</span>
+                    <p>Web development with JavaScript, jQuery, JSON, TypeScript, Angular, Node, MEAN, +300 hours</p>
+                    <span>2019 - 2020</span>
+                </div>
+                <div>
+                    <h4>CCNA certification course</h4>
+                    <span>Open Webinars</span>
+                    <p>Networks, switching, security and routing</p>
+                    <span>2018</span>
+                </div>
+                <div>
+                    <h4>Linux introduction</h4>
+                    <span>Open Webinars</span>
+                    <p>First steps in linux, structures and first knowledge about the operating system</p>
+                    <span>2018</span>
+                </div>
+                <div>
+                    <h4>Telecommunications and IT Systems</h4>
+                    <span>Politécnico LPGC</span>
+                    <p>Distance vocational training cycle. Telephone and television systems, network structures, building cabling, etc.
+                    Based on the European Community Study Program</p>
+                    <span>2010 - 2013</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="main.js"></script>
