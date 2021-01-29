@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-    <section class="bg-light text-center" id="header">
+    <div class="bg-light text-center" id="header">
       <div class="header">
         <h1>Alejandro Rebaldería</h1>
-        <p>Javascript web developer</p>
+        <!-- <p>Javascript Web Developer</p> -->
+        <p>web developer</p>
       </div>
-    </section>
+    </div>
     <div class="anchor" id="aboutMe"></div>
     <nav>
         <div>
@@ -51,17 +52,21 @@
           <h4>What I like about Javascript</h4>
           <p>
             I enjoy solving challenges, I like to find a way to obtain a satisfactory result.
-            Javascript is very versatile, I can use it both in backend and frontend, O.O.P and functional programming (learning FP is one of my goals in the future). Javascript is everywhere and as a developer you must know it.
+            Javascript is very versatile, I can use it both in backend and frontend, O.O.P and functional programming (learning FP is one of my goals in the future).
           </p>
           <p>
-            I like working with Angular as a framework, I still have a lot to learn about it. I also like to work with pure Javascript.
-            I am still learning about the different methods and every day I learn something new.
+            I can not really compare it to other languages ​​because I have not used another one (I started learning Python, but changed it to Javascript). What I like are its methods for manipulating data, objects and literals. I am learning a lot from this and I enjoy it very much.
+          </p>
+          <p>
+            I use it to develop my backend in Node, and on the frontend I am using TypeScript because of Angular, but I like to use pure Javascript too, be it on the frontend, solving algorithms or wherever I need it.
           </p>
         </div>
         <div>
           <h4>In my life I enjoy</h4>
           <p>
-            I love music most of all, I am a bass player. I like nature, walking, discovering culture, places and people. 
+            I love music most of all, I am a bass player.
+            I also like basketball, I have been playing here just before Covid and I am waiting to play again.
+            I like nature, walking, discovering culture, places and people. 
             I recently discovered meditation, it was very important to me, it changed my life. I try to practice it daily.
           </p>
           <p>I am Argentinian, I have been living in Spain and currently I live in Dublin.</p>
@@ -219,8 +224,9 @@
           <div>
             <h3>ImgShare</h3>
             <p>
-                Creating this page, I used Node, Express and some modules like: Express Handlebars, Morgan, Multer, moment and others. I used Mongoose to connect to MongoDB.
-                For the styles I have used Bootstrap 4 and font-awesome.                
+                Creating this dynamic page, I used Node, Express and some modules like: Express Handlebars, Morgan, Multer, moment and others. I used Mongoose to connect to MongoDB.
+                For the styles I have used Bootstrap 4 and font-awesome. 
+                I was learning how to upload images at the time I created this page, I learn how to do it with Multer and I send them to Cloudinary.                
             </p>
           </div>
         </div>
@@ -244,39 +250,45 @@
         <div class="container">
             <h2 class="text-center studies">Studies</h2>
             <div class="split">
-                <div>
-                    <h4>JavaScript Algorithms and Data Structures</h4>
-                    <span>FreeCodeCamp</span>
-                    <p>Developer Certification, representing approximately 300 hours of coursework</p>
-                    <span>2020</span>
+                <div class="card text-center">
+                    <h4 class="card__title">JavaScript Algorithms and Data Structures</h4>
+                    <p class="card__desc">Developer certification, representing approximately 300 hours of coursework. O.O.P, functional programming, basic data structures, intermediate algorithm scripting.</p>
+                    <span class="card__year">FreeCodeCamp - 2020</span>
                 </div>
-                <div>
-                    <h4>Master Javascript</h4>
-                    <span>Udemy</span>
-                    <p>Web development with JavaScript, jQuery, JSON, TypeScript, Angular, Node, MEAN, +300 hours</p>
-                    <span>2019 - 2020</span>
+                <div class="card text-center">
+                    <h4 class="card__title">Master Javascript</h4>
+                    <p class="card__desc">Web development with JavaScript, jQuery, JSON, TypeScript, Angular, Node, MEAN, +300 hours. Complete and intensive course mainly focused on Angular</p>
+                    <span class="card__year">Udemy - 2019/2020</span>
                 </div>
-                <div>
-                    <h4>CCNA certification course</h4>
-                    <span>Open Webinars</span>
-                    <p>Networks, switching, security and routing</p>
-                    <span>2018</span>
+                <div class="card text-center">
+                    <h4 class="card__title">CCNA certification course</h4>
+                    <p class="card__desc">Networks, switching, security and routing. VLANs, OSPF, GRE, DHCP, NAT. Official test CCNA 200-125 complete course.</p>
+                    <span class="card__year">Open Webinars - 2018</span>
                 </div>
-                <div>
-                    <h4>Linux introduction</h4>
-                    <span>Open Webinars</span>
-                    <p>First steps in linux, structures and first knowledge about the operating system</p>
-                    <span>2018</span>
+                <div class="card text-center">
+                    <h4 class="card__title">Linux introduction</h4>
+                    <p class="card__desc">First steps in linux, structures and first knowledge about the system and basic commands. System architecture, packages maintenance, device and file systems. </p>
+                    <span class="card__year">Open Webinars - 2018</span>
                 </div>
-                <div>
-                    <h4>Telecommunications and IT Systems</h4>
-                    <span>Politécnico LPGC</span>
-                    <p>Distance vocational training cycle. Telephone and television systems, network structures, building cabling, etc.
+                <div class="card text-center">
+                    <h4 class="card__title">Telecommunications and IT Systems</h4>
+                    <p class="card__desc">Distance vocational training cycle. Telephone and television systems, network structures, building cabling, etc.
                     Based on the European Community Study Program</p>
-                    <span>2010 - 2013</span>
+                    <span class="card__year">Politécnico LPGC - 2010/2013</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="bg-dark footer">
+      <div class="split">
+        <div class="name">
+          <p >Created by Alejandro Rebaldería</p>
+        </div>
+        <div class="data">
+          <p >Cellphone: 083 432 6097 - Email: ale.rebal@gmail.com - <a href="https://www.linkedin.com/in/alejandro-rebalder%C3%ADa-4a6196176/" target="_blank">Linkedin</a></p>
+        </div>
+      </div>
     </section>
 
     <script src="src/main.js"></script>
