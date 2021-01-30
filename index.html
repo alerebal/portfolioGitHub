@@ -40,6 +40,21 @@
       </div>
     </nav>
 
+    <!-- <section class="nav-bar text-center">
+      <h3 onclick="toScroll('header')">AleRebal</h3>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <nav>
+        <ul>
+          <li onclick="toScroll('aboutMe')">About me</li>
+          <li onclick="toScroll('myProjects')">Projects</li>
+          <li onclick="toScroll('myStudies')">Studies</li>
+        </ul>
+      </nav>
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="toggle-button"></span>
+      </label>
+    </section> -->
+
     <section class="text-center" id="myInfo">
       <h2>About me</h2>
       <div class="split">
@@ -275,66 +290,10 @@
       <div class="anchor" id="myStudies"></div>
     </section>
 
-    <!-- <section class="bg-light">
-      <div class="container">
-        <h2 class="text-center studies">Studies</h2>
-        <div class="split">
-          <div class="card text-center">
-            <h4 class="card__title">
-              JavaScript Algorithms and Data Structures
-            </h4>
-            <p class="card__desc">
-              Developer certification, representing approximately 300 hours of
-              coursework. O.O.P, functional programming, basic data structures,
-              intermediate algorithm scripting.
-            </p>
-            <span class="card__year">FreeCodeCamp - 2020</span>
-          </div>
-          <div class="card text-center">
-            <h4 class="card__title">Master Javascript</h4>
-            <p class="card__desc">
-              Web development with JavaScript, jQuery, JSON, TypeScript,
-              Angular, Node, MEAN, +300 hours. Complete and intensive course
-              mainly focused on Angular
-            </p>
-            <span class="card__year">Udemy - 2019/2020</span>
-          </div>
-          <div class="card text-center">
-            <h4 class="card__title">CCNA certification course</h4>
-            <p class="card__desc">
-              Networks, switching, security and routing. VLANs, OSPF, GRE, DHCP,
-              NAT. Official test CCNA 200-125 complete course.
-            </p>
-            <span class="card__year">Open Webinars - 2018</span>
-          </div>
-          <div class="card text-center">
-            <h4 class="card__title">Linux introduction</h4>
-            <p class="card__desc">
-              First steps in linux, structures and first knowledge about the
-              system and basic commands. System architecture, packages
-              maintenance, device and file systems.
-            </p>
-            <span class="card__year">Open Webinars - 2018</span>
-          </div>
-          <div class="card text-center">
-            <h4 class="card__title">Telecommunications and IT Systems</h4>
-            <p class="card__desc">
-              Distance vocational training cycle. Telephone and television
-              systems, network structures, building cabling, etc. Based on the
-              European Community Study Program
-            </p>
-            <span class="card__year">Politécnico LPGC - 2010/2013</span>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section class="bg-light">
       <div class="container">
         <h2 class="text-center studies">Studies</h2>
-        <!-- <div class="split">
-          
-        </div> -->
         <div class="splide">
           <div class="splide__track">
             <div class="splide__list">
@@ -419,14 +378,5 @@
     </section>
 
     <script src="src/main.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-      new Splide(".splide", {
-        perPage: 3,
-        perMove: 1,
-        rewind: true,
-      }).mount();
-      });
-    </script>
   </body>
 </html>
