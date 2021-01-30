@@ -1,4 +1,4 @@
 
-function toScroll(donde) {
-    document.getElementById(donde).scrollIntoView({behavior: "smooth"})
+function toScroll(where) {
+    document.getElementById(where).scrollIntoView({behavior: "smooth"})
 }

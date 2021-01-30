@@ -9,30 +9,35 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
+    />
     <link rel="stylesheet" href="src/styles.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
   </head>
   <body>
     <div class="bg-light text-center" id="header">
       <div class="header">
         <h1>Alejandro Rebaldería</h1>
-        <!-- <p>Javascript Web Developer</p> -->
         <p>web developer</p>
       </div>
     </div>
     <div class="anchor" id="aboutMe"></div>
     <nav>
-        <div>
-            <ul>
-                <li onclick="toScroll('header')">AleRebal</li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li onclick="toScroll('aboutMe')">About me</li>
-                <li onclick="toScroll('myProjects')">Projects</li>
-                <li onclick="toScroll('myStudies')">Studies</li>
-            </ul>
-        </div>
+      <div>
+        <ul>
+          <li onclick="toScroll('header')">AleRebal</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li onclick="toScroll('aboutMe')">About me</li>
+          <li onclick="toScroll('myProjects')">Projects</li>
+          <li onclick="toScroll('myStudies')">Studies</li>
+        </ul>
+      </div>
     </nav>
 
     <section class="text-center" id="myInfo">
@@ -41,41 +46,59 @@
         <div>
           <h4>Discovering Javascript</h4>
           <p>
-            I studied a professional cycle of Telecommunications and IT Systems in Spain. It was from 2010 to 2013.
-            In 2018 I started studying again, online on the Open Webinars platform, I was focused on networks, and that is when I discovered programming.
+            I studied a professional cycle of Telecommunications and IT Systems
+            in Spain. It was from 2010 to 2013. In 2018 I started studying
+            again, online on the Open Webinars platform, I was focused on
+            networks, and that is when I discovered programming.
           </p>
           <p>
-            After studying basic programming and looking for a language I like, I took a Javascript course in 2019 on the Udemy platform at the beginning and I have been studying a lot since then in different places.
+            After studying basic programming and looking for a language I like,
+            I took a Javascript course in 2019 on the Udemy platform at the
+            beginning and I have been studying a lot since then in different
+            places.
           </p>
         </div>
         <div>
           <h4>What I like about Javascript</h4>
           <p>
-            I enjoy solving challenges, I like to find a way to obtain a satisfactory result.
-            Javascript is very versatile, I can use it both in backend and frontend, O.O.P and functional programming (learning FP is one of my goals in the future).
+            I enjoy solving challenges, I like to find a way to obtain a
+            satisfactory result. Javascript is very versatile, I can use it both
+            in backend and frontend, O.O.P and functional programming (learning
+            FP is one of my goals in the future).
           </p>
           <p>
-            I can not really compare it to other languages ​​because I have not used another one (I started learning Python, but changed it to Javascript). What I like are its methods for manipulating data, objects and literals. I am learning a lot from this and I enjoy it very much.
+            I can not really compare it to other languages ​​because I have not
+            used another one (I started learning Python, but changed it to
+            Javascript). What I like are its methods for manipulating data,
+            objects and literals. I am learning a lot from this and I enjoy it
+            very much.
           </p>
           <p>
-            I use it to develop my backend in Node, and on the frontend I am using TypeScript because of Angular, but I like to use pure Javascript too, be it on the frontend, solving algorithms or wherever I need it.
+            I use it to develop my backend in Node, and on the frontend I am
+            using TypeScript because of Angular, but I like to use pure
+            Javascript too, be it on the frontend, solving algorithms or
+            wherever I need it.
           </p>
         </div>
         <div>
           <h4>In my life I enjoy</h4>
           <p>
-            I love music most of all, I am a bass player.
-            I also like basketball, I have been playing here just before Covid and I am waiting to play again.
-            I like nature, walking, discovering culture, places and people. 
-            I recently discovered meditation, it was very important to me, it changed my life. I try to practice it daily.
+            I love music most of all, I am a bass player. I also like
+            basketball, I have been playing here just before Covid and I am
+            waiting to play again. I like nature, walking, discovering culture,
+            places and people. I recently discovered meditation, it was very
+            important to me, it changed my life. I try to practice it daily.
           </p>
-          <p>I am Argentinian, I have been living in Spain and currently I live in Dublin.</p>
+          <p>
+            I am Argentinian, I have been living in Spain and currently I live
+            in Dublin.
+          </p>
         </div>
       </div>
       <div class="anchor" id="myProjects"></div>
     </section>
 
-    <section class="bg-dark" >
+    <section class="bg-dark">
       <h2 class="text-center">My projects</h2>
 
       <div class="container">
@@ -184,11 +207,11 @@
           </div>
           <div class="img-wrapper">
             <div class="img">
-              <a href="https://alerebal-notes-app.herokuapp.com/" target="_blank">
-                <img
-                  src="src/assets/img/notesLand.png"
-                  alt="notes photo"
-                />
+              <a
+                href="https://alerebal-notes-app.herokuapp.com/"
+                target="_blank"
+              >
+                <img src="src/assets/img/notesLand.png" alt="notes photo" />
                 <div class="span">Node and Mongo</div>
               </a>
             </div>
@@ -212,21 +235,27 @@
         <div class="split">
           <div class="img-wrapper">
             <div class="img">
-              <a href="https://alerebal-img-share.herokuapp.com/" target="_blank">
+              <a
+                href="https://alerebal-img-share.herokuapp.com/"
+                target="_blank"
+              >
                 <img
                   src="src/assets/img/imgShareLand.png"
                   alt="ImgShare photo"
                 />
                 <div class="span">Node and Mongo</div>
               </a>
-        </div>
+            </div>
           </div>
           <div>
             <h3>ImgShare</h3>
             <p>
-                Creating this dynamic page, I used Node, Express and some modules like: Express Handlebars, Morgan, Multer, moment and others. I used Mongoose to connect to MongoDB.
-                For the styles I have used Bootstrap 4 and font-awesome. 
-                I was learning how to upload images at the time I created this page, I learn how to do it with Multer and I send them to Cloudinary.                
+              Creating this dynamic page, I used Node, Express and some modules
+              like: Express Handlebars, Morgan, Multer, moment and others. I
+              used Mongoose to connect to MongoDB. For the styles I have used
+              Bootstrap 4 and font-awesome. I was learning how to upload images
+              at the time I created this page, I learn how to do it with Multer
+              and I send them to Cloudinary.
             </p>
           </div>
         </div>
@@ -246,51 +275,158 @@
       <div class="anchor" id="myStudies"></div>
     </section>
 
-    <section class="bg-light" >
-        <div class="container">
-            <h2 class="text-center studies">Studies</h2>
-            <div class="split">
-                <div class="card text-center">
-                    <h4 class="card__title">JavaScript Algorithms and Data Structures</h4>
-                    <p class="card__desc">Developer certification, representing approximately 300 hours of coursework. O.O.P, functional programming, basic data structures, intermediate algorithm scripting.</p>
-                    <span class="card__year">FreeCodeCamp - 2020</span>
-                </div>
-                <div class="card text-center">
-                    <h4 class="card__title">Master Javascript</h4>
-                    <p class="card__desc">Web development with JavaScript, jQuery, JSON, TypeScript, Angular, Node, MEAN, +300 hours. Complete and intensive course mainly focused on Angular</p>
-                    <span class="card__year">Udemy - 2019/2020</span>
-                </div>
-                <div class="card text-center">
-                    <h4 class="card__title">CCNA certification course</h4>
-                    <p class="card__desc">Networks, switching, security and routing. VLANs, OSPF, GRE, DHCP, NAT. Official test CCNA 200-125 complete course.</p>
-                    <span class="card__year">Open Webinars - 2018</span>
-                </div>
-                <div class="card text-center">
-                    <h4 class="card__title">Linux introduction</h4>
-                    <p class="card__desc">First steps in linux, structures and first knowledge about the system and basic commands. System architecture, packages maintenance, device and file systems. </p>
-                    <span class="card__year">Open Webinars - 2018</span>
-                </div>
-                <div class="card text-center">
-                    <h4 class="card__title">Telecommunications and IT Systems</h4>
-                    <p class="card__desc">Distance vocational training cycle. Telephone and television systems, network structures, building cabling, etc.
-                    Based on the European Community Study Program</p>
-                    <span class="card__year">Politécnico LPGC - 2010/2013</span>
-                </div>
-            </div>
+    <!-- <section class="bg-light">
+      <div class="container">
+        <h2 class="text-center studies">Studies</h2>
+        <div class="split">
+          <div class="card text-center">
+            <h4 class="card__title">
+              JavaScript Algorithms and Data Structures
+            </h4>
+            <p class="card__desc">
+              Developer certification, representing approximately 300 hours of
+              coursework. O.O.P, functional programming, basic data structures,
+              intermediate algorithm scripting.
+            </p>
+            <span class="card__year">FreeCodeCamp - 2020</span>
+          </div>
+          <div class="card text-center">
+            <h4 class="card__title">Master Javascript</h4>
+            <p class="card__desc">
+              Web development with JavaScript, jQuery, JSON, TypeScript,
+              Angular, Node, MEAN, +300 hours. Complete and intensive course
+              mainly focused on Angular
+            </p>
+            <span class="card__year">Udemy - 2019/2020</span>
+          </div>
+          <div class="card text-center">
+            <h4 class="card__title">CCNA certification course</h4>
+            <p class="card__desc">
+              Networks, switching, security and routing. VLANs, OSPF, GRE, DHCP,
+              NAT. Official test CCNA 200-125 complete course.
+            </p>
+            <span class="card__year">Open Webinars - 2018</span>
+          </div>
+          <div class="card text-center">
+            <h4 class="card__title">Linux introduction</h4>
+            <p class="card__desc">
+              First steps in linux, structures and first knowledge about the
+              system and basic commands. System architecture, packages
+              maintenance, device and file systems.
+            </p>
+            <span class="card__year">Open Webinars - 2018</span>
+          </div>
+          <div class="card text-center">
+            <h4 class="card__title">Telecommunications and IT Systems</h4>
+            <p class="card__desc">
+              Distance vocational training cycle. Telephone and television
+              systems, network structures, building cabling, etc. Based on the
+              European Community Study Program
+            </p>
+            <span class="card__year">Politécnico LPGC - 2010/2013</span>
+          </div>
         </div>
+      </div>
+    </section> -->
+
+    <section class="bg-light">
+      <div class="container">
+        <h2 class="text-center studies">Studies</h2>
+        <!-- <div class="split">
+          
+        </div> -->
+        <div class="splide">
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <div class="card text-center">
+                  <h4 class="card__title">
+                    JavaScript Algorithms and Data Structures
+                  </h4>
+                  <p class="card__desc">
+                    Developer certification, representing approximately 300 hours of
+                    coursework. O.O.P, functional programming, basic data structures,
+                    intermediate algorithm scripting.
+                  </p>
+                  <span class="card__year">FreeCodeCamp - 2020</span>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="card text-center">
+                  <h4 class="card__title">Master Javascript</h4>
+                  <p class="card__desc">
+                    Web development with JavaScript, jQuery, JSON, TypeScript,
+                    Angular, Node, MEAN, +300 hours. Complete and intensive course
+                    mainly focused on Angular
+                  </p>
+                  <span class="card__year">Udemy - 2019/2020</span>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="card text-center">
+                  <h4 class="card__title">CCNA certification course</h4>
+                  <p class="card__desc">
+                    Networks, switching, security and routing. VLANs, OSPF, GRE, DHCP,
+                    NAT. Official test CCNA 200-125 complete course.
+                  </p>
+                  <span class="card__year">Open Webinars - 2018</span>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="card text-center">
+                  <h4 class="card__title">Linux introduction</h4>
+                  <p class="card__desc">
+                    First steps in linux, structures and first knowledge about the
+                    system and basic commands. System architecture, packages
+                    maintenance, device and file systems.
+                  </p>
+                  <span class="card__year">Open Webinars - 2018</span>
+                </div>
+              </div>
+              <div class="splide__slide">
+                <div class="card text-center">
+                  <h4 class="card__title">Telecommunications and IT Systems</h4>
+                  <p class="card__desc">
+                    Distance vocational training cycle. Telephone and television
+                    systems, network structures, building cabling, etc. Based on
+                    the European Community Study Program
+                  </p>
+                  <span class="card__year">Politécnico LPGC - 2010/2013</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="bg-dark footer">
       <div class="split">
         <div class="name">
-          <p >Created by Alejandro Rebaldería</p>
+          <p>Created by Alejandro Rebaldería</p>
         </div>
         <div class="data">
-          <p >Cellphone: 083 432 6097 - Email: ale.rebal@gmail.com - <a href="https://www.linkedin.com/in/alejandro-rebalder%C3%ADa-4a6196176/" target="_blank">Linkedin</a></p>
+          <p>
+            Cellphone: 083 432 6097 - Email: ale.rebal@gmail.com -
+            <a
+              href="https://www.linkedin.com/in/alejandro-rebalder%C3%ADa-4a6196176/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </p>
         </div>
       </div>
     </section>
 
     <script src="src/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      new Splide(".splide", {
+        perPage: 3,
+        perMove: 1,
+        rewind: true,
+      }).mount();
+      });
+    </script>
   </body>
 </html>

@@ -79,10 +79,11 @@ section {
 
 .img-wrapper {
     display: flex;
+    flex-direction: column;
+    justify-content: baseline;
 }
 
 .img {
-    align-self: flex-end;
     padding: 1em;
 }
 
@@ -100,7 +101,8 @@ section {
 
 img {
     width: 100%;
-    box-shadow: 0 5px 4px var(--clr-accent-400);
+    box-shadow: 0 0px 8px 2px var(--clr-neutral-200);
+    border-radius: 10px;
 }
 
 
@@ -136,15 +138,6 @@ li {
     background-size: cover;
     background-color: var(--clr-primary-400);
     background-blend-mode: hard-light;
-
-    /*
-        luminosity
-        lighten
-        hard-light
-        color-dodge
-        multiply
-        soft-light
-    */
 }
 
 .header h1 {
@@ -153,36 +146,15 @@ li {
 
 .header p {
     margin-left: 8em;
-    margin-top: 2.5em;
+    margin-top: 2em;
     color: var(--clr-accent-400);
     font-weight: var(--ff-weight-900);
     transform: rotate(-2deg);
 }
 
-/* @media (min-width: 58em) {
-    .header {
-        padding: 6em;
-    }
-
-    .header h1 {
-        font-size: 3rem;
-    }
-
-    .header p {
-        margin-left: 12em;
-        padding-top: 1.5em;
-        font-size: 2.2rem;
-    }
-
-    .paraImg {
-        top: 8.5em;
-    }
-
-} */
 
 .container {
     margin: auto;
-    width: 90%;
     width: min(90%, 61em);
     padding: 2em 0;
     overflow: hidden;
@@ -200,7 +172,7 @@ li {
 }
 
 .split p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 
@@ -237,11 +209,11 @@ span {
 }
 
 .bg-dark h3 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
 }
 
 .bg-dark p {
-    line-height: 1.5;
+    line-height: 1.7;
     color: rgba(255, 255, 255, 0.856);
 }
 
@@ -259,7 +231,7 @@ span {
 .card {
     margin: 1em;
     padding: .5em;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0px 0px 5px 1px var(--clr-neutral-200);
     display: flex;
     flex-direction: column;
@@ -272,11 +244,17 @@ span {
 
 .card__desc {
     font-style: italic;
+    font-size: 1.1rem;
 }
 
 .card__year {
     font-size: .9rem;
     align-self: flex-end;
+}
+
+.splide__slide {
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -311,13 +289,13 @@ span {
         margin-left: 2em;
     }
 
-    .bg-light .split{
+    /* .bg-light .split{
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
     .bg-light .split > *  {
         flex-basis: 25%;
-    }
+    } */
 
 }
