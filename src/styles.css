@@ -1,4 +1,4 @@
-/* :root {
+:root {
     --clr-primary-200: rgba(165, 207, 159, 0.342); 
     --clr-primary-400: rgba(36, 185, 36, 0.842);
 
@@ -13,7 +13,7 @@
 
     --ff-weight-400: 400;
     --ff-weight-900: 900;
-} */
+}
 
 
 
@@ -133,12 +133,12 @@ a {
 }
 
 .brand {
-    color: var(--clr-accent-400);
+    color: var(--clr-accent-200);
     cursor: pointer;
 }
 
 .brand:hover {
-    color: var(--clr-neutral-200);
+    color: var(--clr-primary-400);
 }
 
 .nav-toggle {
@@ -153,6 +153,7 @@ a {
     height: 100%;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 
@@ -213,16 +214,16 @@ nav li {
     margin-bottom: 1em;
     margin-left: 1em;
     font-size: 1.2rem;
-    color: var(--clr-accent-400);
+    color: var(--clr-accent-200);
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     cursor: pointer;
     opacity: 0;
     transition: opacity 150ms ease-in-out ;
 }
 
 nav li:hover {
-    color: var(--clr-neutral-200);
+    color: var(--clr-primary-400);
 }
 
 .nav-toggle:checked ~ nav {
@@ -394,7 +395,7 @@ span {
         display: block;
         height: 2px;
         width: 85%;
-        background-color: var(--clr-accent-400);
+        background-color: var(--clr-accent-200);
         position: absolute;
         top: -.1em;
         left: 15%;
@@ -409,7 +410,7 @@ span {
         display: block;
         height: 2px;
         width: 85%;
-        background-color: var(--clr-accent-400);
+        background-color: var(--clr-accent-200);
         position: absolute;
         bottom: -.1em;
         left: 0;
