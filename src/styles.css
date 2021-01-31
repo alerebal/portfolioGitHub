@@ -133,6 +133,8 @@ a {
 }
 
 .brand {
+    display: inline-block;
+    margin: 0 auto;
     color: var(--clr-accent-200);
     cursor: pointer;
 }
@@ -171,7 +173,7 @@ a {
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {   
     display: block;
-    background-color: var(--clr-accent-400);
+    background-color: var(--clr-accent-200);
     height: 3px;
     width: 2em;
     border-radius: 5px;
