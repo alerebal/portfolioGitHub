@@ -21,7 +21,7 @@
     --clr-primary-200: #136c7230; 
     --clr-primary-400: #136c72;
 
-    --clr-accent-200: #38CFD9;
+    --clr-accent-200: #24cdda;
     --clr-accent-400: #87629A;
 
     --clr-neutral-200: #aca9a96b;
@@ -295,7 +295,7 @@ span {
 }
 
 .bg-dark a {
-    color: var(--clr-accent-400);
+    color: var(--clr-accent-200);
     font-size: 1.1rem;
 }
 
