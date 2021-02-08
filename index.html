@@ -28,7 +28,7 @@
 
     <section class="nav-bar text-center" id="nav-bar">
       <h3 class="brand" onclick="toScroll('header')">AleRebal</h3>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <nav>
         <ul>
           <li onclick="toScroll('aboutMe')">About me</li>
@@ -102,7 +102,10 @@
     <section class="bg-dark" id="projects">
       <h2 class="text-center">My projects</h2>
       <div class="container">
-        <p style="font-size: 1rem;">I use free versions of Heroku and Vercel to deploy my apps, so you have to wait a bit to see my projects once you click the links below.</p>
+        <p style="font-size: 1rem">
+          I use free versions of Heroku and Vercel to deploy my apps, so you
+          have to wait a bit to see my projects once you click the links below.
+        </p>
         <div class="split">
           <div>
             <h3 id="ecommerce">Ecommerce store</h3>
@@ -153,7 +156,10 @@
         <div class="split">
           <div class="img-wrapper">
             <div class="img">
-              <a href="https://vegetarian-recipes-front.vercel.app/" target="_blank">
+              <a
+                href="https://vegetarian-recipes-front.vercel.app/"
+                target="_blank"
+              >
                 <img src="src/assets/img/receipes.png" alt="vegetarian photo" />
                 <div class="span">MEAN Stack</div>
               </a>
@@ -175,7 +181,9 @@
         </div>
         <div class="links">
           <p>
-            <a href="https://vegetarian-recipes-front.vercel.app/" target="_blank"
+            <a
+              href="https://vegetarian-recipes-front.vercel.app/"
+              target="_blank"
               ><p>Go to the page</p>
             </a>
           </p>
@@ -195,17 +203,52 @@
       <div class="container">
         <div class="split">
           <div>
-            <h3>Notes app</h3>
+            <h3>Rock ImageShare</h3>
             <p>
-              This page was created using Node, Express and several other
-              modules: Express Handlebars such as templates, bcryptjs to encrypt
-              user passwords, flash-connect to administrator messages, override
-              method to be able to use put and remove method of frontend and
-              passport form to users' navigations. I have used MongoDB as the
-              database, connecting it through Mongoose. For styles I have used
-              Bootstrap 4 and font-awesome
+              Creating this dynamic page, I used Node, Express and some modules
+              like: Express Handlebars, Morgan, Multer, moment and others as
+              well as a bit of jquery. I used Mongoose to connect to MongoDB.
+              For the styles I have used Bootstrap 4 and font-awesome, but
+              recently I changed bootstrap to pure css. I was learning how to
+              upload images at the time I created this page, I learn how to do
+              it with Multer and I send them to Cloudinary.
             </p>
           </div>
+          <div class="img-wrapper">
+            <div class="img">
+              <a
+                href="https://alerebal-img-share.herokuapp.com/"
+                target="_blank"
+              >
+                <img
+                  src="src/assets/img/rockImageShare.png"
+                  alt="ImgShare photo"
+                />
+                <div class="span">Node and Mongo</div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="links">
+          <p>
+            <a href="https://alerebal-img-share.herokuapp.com/" target="_blank"
+              ><p>Go to the page</p>
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://github.com/alerebal/rock-image-share"
+              target="_blank"
+              ><p>Page code</p>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="split">
+
           <div class="img-wrapper">
             <div class="img">
               <a
@@ -216,6 +259,18 @@
                 <div class="span">Node and Mongo</div>
               </a>
             </div>
+          </div>
+          <div>
+            <h3>Notes app</h3>
+            <p>
+              This page was created using Node, Express and several other
+              modules: Express Handlebars such as templates, bcryptjs to encrypt
+              user passwords, flash-connect to administrator messages, override
+              method to be able to use put and remove method of frontend and
+              passport form to users' navigations. I have used MongoDB as the
+              database, connecting it through Mongoose. For styles I have used
+              Bootstrap 4 and font-awesome
+            </p>
           </div>
         </div>
         <div class="links">
@@ -232,50 +287,8 @@
         </div>
       </div>
 
-      <div class="container">
-        <div class="split">
-          <div class="img-wrapper">
-            <div class="img">
-              <a
-                href="https://alerebal-img-share.herokuapp.com/"
-                target="_blank"
-              >
-                <img
-                  src="src/assets/img/imgShareLand.png"
-                  alt="ImgShare photo"
-                />
-                <div class="span">Node and Mongo</div>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3>ImgShare</h3>
-            <p>
-              Creating this dynamic page, I used Node, Express and some modules
-              like: Express Handlebars, Morgan, Multer, moment and others. I
-              used Mongoose to connect to MongoDB. For the styles I have used
-              Bootstrap 4 and font-awesome. I was learning how to upload images
-              at the time I created this page, I learn how to do it with Multer
-              and I send them to Cloudinary.
-            </p>
-          </div>
-        </div>
-        <div class="links">
-          <p>
-            <a href="https://alerebal-img-share.herokuapp.com/" target="_blank"
-              ><p>Go to the page</p>
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/alerebal/imgShare" target="_blank"
-              ><p>Page code</p>
-            </a>
-          </p>
-        </div>
-      </div>
       <div class="anchor" id="myStudies"></div>
     </section>
-
 
     <section class="bg-light">
       <div class="container">
@@ -289,9 +302,9 @@
                     JavaScript Algorithms and Data Structures
                   </h4>
                   <p class="card__desc">
-                    Developer certification, representing approximately 300 hours of
-                    coursework. O.O.P, functional programming, basic data structures,
-                    intermediate algorithm scripting.
+                    Developer certification, representing approximately 300
+                    hours of coursework. O.O.P, functional programming, basic
+                    data structures, intermediate algorithm scripting.
                   </p>
                   <span class="card__year">FreeCodeCamp - 2020</span>
                 </div>
@@ -301,8 +314,8 @@
                   <h4 class="card__title">Master Javascript</h4>
                   <p class="card__desc">
                     Web development with JavaScript, jQuery, JSON, TypeScript,
-                    Angular, Node, MEAN, +300 hours. Complete and intensive course
-                    mainly focused on Angular
+                    Angular, Node, MEAN, +300 hours. Complete and intensive
+                    course mainly focused on Angular
                   </p>
                   <span class="card__year">Udemy - 2019/2020</span>
                 </div>
@@ -311,8 +324,8 @@
                 <div class="card text-center">
                   <h4 class="card__title">CCNA certification course</h4>
                   <p class="card__desc">
-                    Networks, switching, security and routing. VLANs, OSPF, GRE, DHCP,
-                    NAT. Official test CCNA 200-125 complete course.
+                    Networks, switching, security and routing. VLANs, OSPF, GRE,
+                    DHCP, NAT. Official test CCNA 200-125 complete course.
                   </p>
                   <span class="card__year">Open Webinars - 2018</span>
                 </div>
@@ -321,8 +334,8 @@
                 <div class="card text-center">
                   <h4 class="card__title">Linux introduction</h4>
                   <p class="card__desc">
-                    First steps in linux, structures and first knowledge about the
-                    system and basic commands. System architecture, packages
+                    First steps in linux, structures and first knowledge about
+                    the system and basic commands. System architecture, packages
                     maintenance, device and file systems.
                   </p>
                   <span class="card__year">Open Webinars - 2018</span>
