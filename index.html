@@ -14,14 +14,13 @@
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
     />
     <link rel="stylesheet" href="src/styles.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script src="https://use.fontawesome.com/12b108e7f7.js"></script>
   </head>
   <body>
     <div class="bg-light text-center" id="header">
-      <div class="header">
-        <h1>Alejandro Rebaldería</h1>
-        <p>web developer</p>
+      <div class="header parallax-bg">
+        <h1 class="nameTitle">Alejandro Rebaldería</h1>
       </div>
     </div>
     <div class="anchor" id="aboutMe"></div>
@@ -41,62 +40,29 @@
       </label>
     </section>
 
-    <section class="text-center" id="myInfo">
-      <h2>About me</h2>
-      <div class="split">
-        <div>
-          <h4>Discovering Javascript</h4>
+    <div class="text-center" id="myInfo">
+      <section class="about-me">
+        <div class="about-me__textbox parallax-box">
+          <h1>About me</h1>
           <p>
-            I studied a professional cycle of Telecommunications and IT Systems
-            in Spain. It was from 2010 to 2013. In 2018 I started studying
-            again, online on the Open Webinars platform, I was focused on
-            networks, and that is when I discovered programming.
-          </p>
-          <p>
-            After studying basic programming and looking for a language I like,
-            I took a Javascript course in 2019 on the Udemy platform at the
-            beginning and I have been studying a lot since then in different
-            places.
-          </p>
-        </div>
-        <div>
-          <h4>What I like about Javascript</h4>
-          <p>
-            I enjoy solving challenges, I like to find a way to obtain a
-            satisfactory result. Javascript is very versatile, I can use it both
-            in backend and frontend, O.O.P and functional programming (learning
-            FP is one of my goals in the future).
-          </p>
-          <p>
-            I can not really compare it to other languages ​​because I have not
-            used another one (I started learning Python, but changed it to
-            Javascript). What I like are its methods for manipulating data,
-            objects and literals. I am learning a lot from this and I enjoy it
-            very much.
-          </p>
-          <p>
-            I use it to develop my backend in Node, and on the frontend I am
-            using TypeScript because of Angular, but I like to use pure
-            Javascript too, be it on the frontend, solving algorithms or
-            wherever I need it.
-          </p>
-        </div>
-        <div>
-          <h4>In my life I enjoy</h4>
-          <p>
-            I love music most of all, I am a bass player. I also like
-            basketball, I have been playing here just before Covid and I am
-            waiting to play again. I like nature, walking, discovering culture,
-            places and people. I recently discovered meditation, it was very
-            important to me, it changed my life. I try to practice it daily.
+            I love programming, music and nature. I enjoy solving challenges and
+            meeting people from all over the world.<br>
+            I like to find solutions to the client's wishes, and to achieve this, listening and sharing the ideas of our team is the best way.
           </p>
           <p>
             I am Argentinian, I have been living in Spain and currently I live
             in Dublin.
           </p>
         </div>
-      </div>
+      </section>
       <div class="anchor" id="myProjects"></div>
+    </div>
+
+    <section class="bg-light">
+      <div class="frase">
+        <h4>"Love the love you live. Live the live you love."</h4>
+        <p>Bob Marley</p>
+      </div>
     </section>
 
     <section class="bg-dark" id="projects">
@@ -106,8 +72,8 @@
           I use free versions of Heroku and Vercel to deploy my apps, so you
           have to wait a bit to see my projects once you click the links below.
         </p>
-        <div class="split">
-          <div>
+        <div class="split fade-in">
+          <div >
             <h3 id="ecommerce">Ecommerce store</h3>
             <p>
               In this project I started to learn about Stripe and applied it in
@@ -122,7 +88,7 @@
             </p>
           </div>
           <div class="img-wrapper">
-            <div class="img">
+            <div class="img slide-in from-right">
               <a href="https://ecommerce-henna.vercel.app/" target="_blank">
                 <img
                   src="src/assets/img/ecommerceLandCut.png"
@@ -153,9 +119,9 @@
       </div>
 
       <div class="container">
-        <div class="split">
+        <div class="split fade-in">
           <div class="img-wrapper">
-            <div class="img">
+            <div class="img slide-in from-left">
               <a
                 href="https://vegetarian-recipes-front.vercel.app/"
                 target="_blank"
@@ -201,7 +167,7 @@
       </div>
 
       <div class="container">
-        <div class="split">
+        <div class="split fade-in">
           <div>
             <h3>Rock ImageShare</h3>
             <p>
@@ -215,7 +181,7 @@
             </p>
           </div>
           <div class="img-wrapper">
-            <div class="img">
+            <div class="img slide-in from-right">
               <a
                 href="https://alerebal-img-share.herokuapp.com/"
                 target="_blank"
@@ -228,7 +194,6 @@
               </a>
             </div>
           </div>
-
         </div>
         <div class="links">
           <p>
@@ -247,10 +212,9 @@
       </div>
 
       <div class="container">
-        <div class="split">
-
+        <div class="split fade-in">
           <div class="img-wrapper">
-            <div class="img">
+            <div class="img slide-in from-left">
               <a
                 href="https://alerebal-notes-app.herokuapp.com/"
                 target="_blank"
@@ -365,17 +329,25 @@
         </div>
         <div class="data">
           <p>
-            Cellphone: 083 432 6097 - Email: ale.rebal@gmail.com -
+            <i class="fa fa-mobile"></i> 083 432 6097
+            <i class="fa fa-envelope"></i> ale.rebal@gmail.com
             <a
               href="https://www.linkedin.com/in/alejandro-rebalder%C3%ADa-4a6196176/"
               target="_blank"
-              >Linkedin</a
-            >
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/alerebal" target="_blank"
+              ><i class="fa fa-github"></i
+            ></a>
           </p>
         </div>
       </div>
     </section>
-
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <script src="src/main.js"></script>
   </body>
 </html>
