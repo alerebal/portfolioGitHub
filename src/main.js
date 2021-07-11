@@ -7,11 +7,13 @@ $(window).scroll(() => {
 function parallax() {
     let wScroll = $(window).scrollTop();
 
-    // $('.parallax-bg').css('background-position', `center ${wScroll * 0.5}px`);
-    $('.parallax-bg').css('background-position-y', `bottom ${wScroll * -.5}px`);
-
-
     $('.parallax-box').css('top', `${wScroll * .0085}em`)
+
+    // $('.parallax-bg').css('background-position-y', `bottom ${wScroll * -.5}px`);
+    $('.parallax-bg').css('background-position', `center ${wScroll * 0.5}px`);
+
+
+
 }
 
 // title change color
