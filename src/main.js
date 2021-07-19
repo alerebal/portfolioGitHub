@@ -1,20 +1,12 @@
 // Parallax
 
-$(window).scroll(() => {
-    parallax();
-});
-
-function parallax() {
-    let wScroll = $(window).scrollTop();
-
-    $('.parallax-box').css('top', `${wScroll * .0085}em`)
-
-    // $('.parallax-bg').css('background-position-y', `bottom ${wScroll * -.5}px`);
-    $('.parallax-bg').css('background-position', `center ${wScroll * 0.5}px`);
-
-
-
-}
+const parallaxBg = document.querySelector(".parallax-bg");
+const parallaxBox = document.querySelector(".parallax-box")
+window.addEventListener("scroll", function () { 
+    let offset = window.pageYOffset;
+    parallaxBg.style.backgroundPositionY = offset * 0.7 + 'px'
+    parallaxBox.style.top =  offset * 0.15 + 'px'
+ })
 
 // title change color
 const title = document.querySelector('.nameTitle');
