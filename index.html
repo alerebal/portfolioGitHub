@@ -13,16 +13,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
     />
-    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link rel="stylesheet" href="src/styles/styles2.css" />
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
     <script src="https://use.fontawesome.com/12b108e7f7.js"></script>
   </head>
   <body>
-    <div class="bg-light text-center" id="header">
+    <section class="video">
+      <div class="side" id="side1">
+        <video
+          src="src/assets/video/3D - 24715.mp4"
+          type="video/mp4"
+          autoplay
+          loop
+        ></video>
+      </div>
+      <div class="side" id="side2">
+        <video
+          src="src/assets/video/3D - 24715.mp4"
+          type="video/mp4"
+          autoplay
+          loop
+        ></video>
+      </div>
+    </section >
+
+    <section class="bg-light text-center" id="header">
       <div class="header parallax-bg">
         <h1 class="nameTitle">Alejandro Rebaldería</h1>
       </div>
-    </div>
+    </section>
     <div class="anchor" id="aboutMe"></div>
 
     <section class="nav-bar text-center" id="nav-bar">
@@ -46,8 +66,9 @@
           <h1>About me</h1>
           <p>
             I love programming, music and nature. I enjoy solving challenges and
-            meeting people from all over the world.<br>
-            I like to find solutions to the client's wishes, and to achieve this, listening and sharing the ideas of our team is the best way.
+            meeting people from all over the world.<br />
+            I like to find solutions to the client's wishes, and to achieve
+            this, listening and sharing the ideas of our team is the best way.
           </p>
           <p>
             I am Argentinian, I have been living in Spain and currently I live
@@ -73,7 +94,7 @@
           have to wait a bit to see my projects once you click the links below.
         </p>
         <div class="split fade-in">
-          <div >
+          <div>
             <h3 id="ecommerce">Ecommerce store</h3>
             <p>
               In this project I started to learn about Stripe and applied it in
