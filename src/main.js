@@ -5,7 +5,7 @@ const side2 = document.getElementById('side2');
 
 // Parallax
 
-// const parallaxBg = document.querySelector(".parallax-bg");
+const parallaxBg = document.querySelector(".parallax-bg");
 const parallaxBox = document.querySelector(".parallax-box")
 
 // Scroll effects
@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
     // parallaxBg.style.backgroundPositionY = offset * 0.7 + 'px'
     side1.style.left = -offset + 'px';
     side2.style.left = offset + 'px';
-    parallaxBox.style.top =  offset * 0.075 + 'px'
+    parallaxBox.style.top =  offset * 0.095 + 'px'
  })
 
 // title change color
@@ -25,7 +25,7 @@ const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
 const sectionNavOptions = {
-    rootMargin: "-400px 0px 0px 0px"
+    rootMargin: "-450px 0px 0px 0px"
 };
 
 const sectionNavObserver = new IntersectionObserver(function (entries) {

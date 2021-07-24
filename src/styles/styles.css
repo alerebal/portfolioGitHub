@@ -74,7 +74,7 @@ p {
 }
 
 section {
-  padding: 2em;
+  padding: 4em 2em;
 }
 
 .text-center {
@@ -142,12 +142,12 @@ section#header {
   font-size: 2em;
   margin-top: 6em;
   text-shadow: 2px 1px 2px var(--clr-accent-400);
-  transition: 400ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
 
 .changeTitle {
   color: var(--clr-accent-200);
-  transition: 400ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
 
 .brand {
@@ -422,6 +422,10 @@ h3 {
   .header {
     height: 80vh;
     padding: 2em;
+  }
+
+  .container .split{
+    padding: 5em 1em;
   }
 
   .nameTitle {
