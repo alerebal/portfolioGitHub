@@ -303,6 +303,8 @@ nav li {
 }
 
 .links {
+  width: 95%;
+  margin: auto;
   display: flex;
   justify-content: space-around;
   border-bottom: var(--clr-accent-200) 1px solid;
@@ -409,8 +411,13 @@ h3 {
   opacity: 1;
 }
 
+.footer {
+  padding: 1em;
+}
+
 .footer p{
   color: var(--clr-primary-200);
+  font-size: 1.05em;
 }
 
 @media screen and (min-width: 58em) {
@@ -452,22 +459,17 @@ h3 {
     transform: translateX(0);
   }
 
-  /* section.bg-dark {
+  section.bg-dark.projects {
+    height: 80vh;
     background: linear-gradient(black, black), url(../assets/img/backImages/calzada_del_gigante.jpeg), fixed ;
     background-size: cover;
     background-blend-mode: saturation;
-  } */
-
-  section .bg-dark {
-     background: linear-gradient(
-    130deg,
-    var(--clr-neutral-900) 0%,
-    var(--clr-neutral-400) 48%,
-    var(--clr-neutral-900) 100%
-  );
+    overflow: scroll;
   }
 
-
+  section.bg-dark.projects .container {
+    background-color: var(--clr-neutral-400);
+  }
 
   .split {
     flex-direction: row;
@@ -571,4 +573,5 @@ h3 {
   .frase p {
     align-self: flex-end;
   }
+
 }
