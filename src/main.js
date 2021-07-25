@@ -25,7 +25,7 @@ const faders = document.querySelectorAll('.fade-in');
 const sliders = document.querySelectorAll('.slide-in');
 
 const sectionNavOptions = {
-    rootMargin: "-450px 0px 0px 0px"
+    rootMargin: "-750px 0px 0px 0px"
 };
 
 const sectionNavObserver = new IntersectionObserver(function (entries) {

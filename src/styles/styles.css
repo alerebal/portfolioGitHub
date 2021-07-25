@@ -1,29 +1,13 @@
 :root {
-  --clr-primary-200: rgba(165, 207, 159, 0.342);
-  --clr-primary-400: rgba(36, 185, 36, 0.842);
+  --clr-primary-200: rgb(73,151,200);
+  --clr-primary-400: rgba(51, 51, 153, 0.952);
 
-  --clr-accent-200: rgba(248, 218, 118, 0.63);
-  --clr-accent-400: rgba(247, 189, 0, 0.815);
+  --clr-accent-200: rgba(248, 151, 113, 0.616);
+  --clr-accent-400: rgba(252, 84, 18, 0.918);
 
-  --clr-neutral-200: rgba(0, 0, 0, 0.336);
-  --clr-neutral-400: rgba(0, 0, 0, 0.76);
-
-  --ff-primary: "Roboto", sans-serif;
-  --ff-accent: "Playfair Display", serif;
-
-  --ff-weight-400: 400;
-  --ff-weight-900: 900;
-}
-
-:root {
-  --clr-primary-200: #136c7230;
-  --clr-primary-400: #136c72;
-
-  --clr-accent-200: #24cdda;
-  --clr-accent-400: #87629a;
-
-  --clr-neutral-200: #aca9a96b;
-  --clr-neutral-400: #23424a;
+  --clr-neutral-100: rgb(241, 238, 238);
+  --clr-neutral-200: rgba(211, 203, 201, 0.874);
+  --clr-neutral-400: rgba(68, 67, 69, 0.89);
   --clr-neutral-900: rgba(0, 0, 0, 0.918);
 
   --ff-primary: "Roboto", sans-serif;
@@ -59,7 +43,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: var(--clr-primary-400);
+  color: var(--clr-primary-200);
   font-family: var(--ff-accent);
   font-weight: var(--ff-weight-900);
   line-height: 1;
@@ -102,16 +86,16 @@ section {
   transform: rotate(-6deg);
 }
 
-img {
+a img {
   width: 100%;
   box-shadow: 0px 0px 8px 2px var(--clr-neutral-200);
   border-radius: 10px;
   transition: transform 250ms ease-in-out;
 }
 
-img:hover {
+a img:hover {
   transform: scale(1.02);
-  border: solid 1px var(--clr-accent-400);
+  box-shadow: 0px 0px 8px 2px var(--clr-primary-200);
   transition: transform 250ms ease-in-out;
 }
 
@@ -128,26 +112,22 @@ section#header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 130vh;
-  background-image: url(../assets/img/backImages/orangeKeyboardEdit.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom;
+  min-height: 180vh;
+  background-image: linear-gradient(black, black), url(../assets/img/backImages/calzada_del_gigante.jpeg);
   background-size: cover;
-  background-color: var(--clr-primary-400);
-  background-blend-mode: hard-light;
-
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
 }
 
 .nameTitle {
-  font-size: 2em;
-  margin-top: 6em;
-  text-shadow: 2px 1px 2px var(--clr-accent-400);
-  transition: 100ms ease-in-out;
+  align-self: flex-end;
+  transition: 50ms ease-in-out;
+  opacity: 0;
 }
 
 .changeTitle {
-  color: var(--clr-accent-200);
-  transition: 200ms ease-in-out;
+  transition: 500ms ease-in-out;
+  opacity: 1;
 }
 
 .brand {
@@ -157,8 +137,21 @@ section#header {
   cursor: pointer;
 }
 
+.logo {
+  width: 10em;
+  align-self: flex-end;
+}
+
+.brand img {
+  width: 4em;
+  height: 3em;
+  transition: transform 150ms ease-in-out;
+}
+
+
 .brand:hover {
-  color: var(--clr-primary-400);
+  transform:  scale(1.05);
+  transition: transform ease-in-out 150ms;
 }
 
 .nav-toggle {
@@ -233,7 +226,7 @@ nav li {
   margin-bottom: 1em;
   margin-left: 1em;
   font-size: 1.2rem;
-  color: var(--clr-accent-200);
+  color: var(--clr-primary-200);
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -241,9 +234,6 @@ nav li {
   transition: opacity 150ms ease-in-out;
 }
 
-nav li:hover {
-  color: var(--clr-primary-400);
-}
 
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
@@ -271,14 +261,14 @@ nav li:hover {
   padding: 4em;
   width: 100vw;
   margin-left: -2.5%;
-  outline: 2px solid var(--clr-primary-400);
+  outline: 2px solid var(--clr-primary-200);
   outline-offset: -2.5em;
-  color: var(--clr-primary-400);
+  color: var(--clr-accent-200);
   position: relative;
 }
 
 .about-me__textbox h1 {
-  color: var(--clr-primary-400);
+  color: var(--clr-primary-200);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -315,10 +305,10 @@ nav li:hover {
 .links {
   display: flex;
   justify-content: space-around;
-  border-bottom: var(--clr-primary-400) 1px solid;
+  border-bottom: var(--clr-accent-200) 1px solid;
 }
 
-.links a {
+.links a{
   opacity: 1;
   transition: opacity 150ms ease-in-out;
 }
@@ -338,12 +328,12 @@ span {
 
 .bg-dark {
   background: var(--clr-neutral-400);
-  color: white;
+  color: var(--clr-neutral-100);
 }
 
 .bg-dark h2,
 h3 {
-  color: white;
+  color: var(--clr-neutral-100);
 }
 
 .bg-dark h3 {
@@ -352,12 +342,12 @@ h3 {
 
 .bg-dark p {
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.856);
+  color: var(--clr-neutral-200);
 }
 
 .bg-dark a {
-  color: var(--clr-accent-200);
-  font-size: 1.1rem;
+  color: var(--clr-primary-200);
+  font-size: 1.2em;
 }
 
 .card {
@@ -372,6 +362,7 @@ h3 {
 
 .card__title {
   border-bottom: solid 1px var(--clr-accent-400);
+  color: var(--clr-primary-200);
 }
 
 .card__desc {
@@ -418,13 +409,17 @@ h3 {
   opacity: 1;
 }
 
+.footer p{
+  color: var(--clr-primary-200);
+}
+
 @media screen and (min-width: 58em) {
   .header {
     height: 80vh;
     padding: 2em;
   }
 
-  .container .split{
+  .container .split {
     padding: 5em 1em;
   }
 
@@ -457,6 +452,23 @@ h3 {
     transform: translateX(0);
   }
 
+  /* section.bg-dark {
+    background: linear-gradient(black, black), url(../assets/img/backImages/calzada_del_gigante.jpeg), fixed ;
+    background-size: cover;
+    background-blend-mode: saturation;
+  } */
+
+  section .bg-dark {
+     background: linear-gradient(
+    130deg,
+    var(--clr-neutral-900) 0%,
+    var(--clr-neutral-400) 48%,
+    var(--clr-neutral-900) 100%
+  );
+  }
+
+
+
   .split {
     flex-direction: row;
   }
@@ -479,7 +491,6 @@ h3 {
   }
 
   .brand {
-    margin-bottom: 0;
     margin-left: 1.5em;
   }
 
@@ -504,7 +515,7 @@ h3 {
   nav li::before {
     content: "";
     display: block;
-    height: 2px;
+    height: 1px;
     width: 85%;
     background-color: var(--clr-accent-200);
     position: absolute;
@@ -519,7 +530,7 @@ h3 {
   nav li::after {
     content: "";
     display: block;
-    height: 2px;
+    height: 1px;
     width: 85%;
     background-color: var(--clr-accent-200);
     position: absolute;
