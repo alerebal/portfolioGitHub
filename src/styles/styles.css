@@ -65,7 +65,7 @@ section {
   text-align: center;
 }
 
-.img-wrapper {
+/* .img-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: baseline;
@@ -73,20 +73,10 @@ section {
 
 .img {
   padding: 1em;
-}
+} */
 
-.span {
-  position: relative;
-  width: 50%;
-  font-size: 1.2rem;
-  color: var(--clr-accent-200);
-  text-shadow: -1px 2px var(--clr-accent-400);
-  top: -3em;
-  left: 2em;
-  transform: rotate(-6deg);
-}
 
-a img {
+/* a img {
   width: 100%;
   box-shadow: 0px 0px 8px 2px var(--clr-neutral-200);
   border-radius: 10px;
@@ -97,7 +87,7 @@ a img:hover {
   transform: scale(1.02);
   box-shadow: 0px 0px 8px 2px var(--clr-primary-200);
   transition: transform 250ms ease-in-out;
-}
+} */
 
 a {
   text-decoration: none;
