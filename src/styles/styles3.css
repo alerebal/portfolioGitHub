@@ -39,10 +39,21 @@ a img {
 .span {
   position: absolute;
   width: 50%;
-  font-size: 1.2rem;
   color: var(--clr-accent-400);
+  /* text-shadow: -1px 1px var(--clr-primary-200); */
+  font-size: 1.5rem;
   font-weight: 900;
-  text-shadow: -1px 2px var(--clr-primary-400);
   transform: rotate(-6deg);
   z-index: 200;
+}
+
+.from-left .span {
+  /* color: var(--clr-accent-400); */
+  text-shadow: -1px 1px var(--clr-primary-200);
+  right: -1em;
+}
+
+.from-right .span {
+  /* color: var(--clr-primary-400); */
+  text-shadow: -1px 1px var(--clr-neutral-200);
 }

@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alejandro Rebaldería</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css"
-    />
-    <link rel="stylesheet" href="src/styles/styles.css" />
-    <link rel="stylesheet" href="src/styles/styles2.css" />
-    <link rel="stylesheet" href="src/styles/styles3.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
-    <script src="https://use.fontawesome.com/12b108e7f7.js"></script>
-  </head>
-  <body>
-    <section class="video">
-      <div class="side" id="side1">
-        <video
-          src="src/assets/video/3D - 24715.mp4"
-          type="video/mp4"
-          autoplay
-          loop
-        ></video>
-      </div>
-      <div class="side" id="side2">
-        <video
-          src="src/assets/video/3D - 24715.mp4"
-          type="video/mp4"
-          autoplay
-          loop
-        ></video>
-      </div>
-    </section >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alejandro Rebaldería</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css" />
+  <link rel="stylesheet" href="src/styles/styles.css" />
+  <link rel="stylesheet" href="src/styles/styles2.css" />
+  <link rel="stylesheet" href="src/styles/styles3.css" />
 
-    <section class="bg-light text-center" id="header">
-      <div class="header parallax-bg">
-        <div class="nameTitle">
-          <img class="logo" src="./src/assets/brand/logo.svg" alt="Alejandro Rebaldería">
-        </div>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+  <script src="https://use.fontawesome.com/12b108e7f7.js"></script>
+</head>
+
+<body>
+  <section class="video">
+    <div class="side" id="side1">
+      <video src="src/assets/video/3D - 24715.mp4" type="video/mp4" autoplay loop></video>
+    </div>
+    <div class="side" id="side2">
+      <video src="src/assets/video/3D - 24715.mp4" type="video/mp4" autoplay loop></video>
+    </div>
+  </section>
+
+  <section class="bg-light text-center" id="header">
+    <div class="header parallax-bg">
+      <div class="nameTitle">
+        <img class="logo" src="./src/assets/brand/logo.svg" alt="Alejandro Rebaldería">
       </div>
-    
+    </div>
+  </section>
 
     <div class="anchor" id="aboutMe"></div>
 
@@ -94,28 +82,135 @@
     </section>
 
     <section class="bg-dark projects" id="projects">
-      
+
       <div class="container">
         <h2 class="text-center">My projects</h2>
-          <p style="font-size: 1rem" class="text-center">
-            I use free versions of Heroku and Vercel to deploy my apps, so you
-            have to wait a bit to see my projects once you click the links below.
-          </p>
+        <p style="font-size: 1rem" class="text-center">
+          I use free versions of Heroku and Vercel to deploy my apps, so you
+          have to wait a bit to see my projects once you click the links below.
+        </p>
 
+        <article>
+          <div class="split fade-in">
+            <div>
+              <h3>Earth Day Hackathon</h3>
+              <p>
+                I was part of a Code Institute Earth Day Hackathon. An incredible experience in which I learned a lot
+                about teamwork. I was in charge of part of the design of the page, I solved some merge conflicts as well
+                as general tasks on the development of the project.
+                It was four days of group meetings, discussions and coding on the project that prepared me for
+                real-world work.
+              </p>
+            </div>
+            <div class="img-wrapper">
+              <div class="img slide-in from-right">
+                <a href="https://hashim222.github.io/save-earth/" target="_blank">
+                  <img src="src/assets/img/hackathon-2.png" alt="Hackathon photo" style="--i:1;--j:0" />
+                  <img src="src/assets/img/hackathon-2.png" alt="Hackathon photo" style="--i:0;--j:1" />
+                  <img src="src/assets/img/hackathon-2.png" alt="Hackathon photo" style="--i:-1;--j:2" />
+                  <div class="span">HTML, CSS and Javascript</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <p>
+              <a href="https://hashim222.github.io/save-earth/" target="_blank">
+                <p>Go to the page</p>
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/alerebal/save-earth" target="_blank">
+                <p>Page code</p>
+              </a>
+            </p>
+          </div>
+        </article>
 
+        <article>
+          <div class="split fade-in">
+            <div class="img-wrapper">
+              <div class="img slide-in from-left">
+                <a href="https://ale-daily-menu.herokuapp.com/" target="_blank">
+                  <img src="src/assets/img/code-inst-project-3.png" alt="Daily menu app photo" style="--i:1;--j:0" />
+                  <img src="src/assets/img/code-inst-project-3.png" alt="Daily menu app photo" style="--i:0;--j:1" />
+                  <img src="src/assets/img/code-inst-project-3.png" alt="Daily menu app photo" style="--i:-1;--j:2" />
+                  <div class="span">Python</div>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3>Daily Manu App</h3>
+              <p>
+                The main goal of this app is to create a daily menu for a group of kids. The user can create kids and
+                recipes data, then choose a group of kids or all of them and choose a recipe to create a daily menu.
+                The app is a command line automation that runs in Python, the data is stored in a spreadsheet and to
+                connect it I use Google Cloud, in which I enabled Google Sheet to connect to the spreadsheet and Google
+                Drive where the credentials are setting up.
+              </p>
+            </div>
+          </div>
+          <div class="links">
+            <p>
+              <a href="https://ale-daily-menu.herokuapp.com/" target="_blank">
+                <p>Go to the App</p>
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/alerebal/codeInstitutePortfolio3" target="_blank">
+                <p>App code</p>
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <div class="split fade-in">
+            <div>
+              <h3>Bikini Bottom Wars Game</h3>
+              <p>
+                This page has been designed for any user who likes the traditional game Rock, Paper, Scissors and wants
+                to
+                discover the version of the game with extended functions for the fans of Stars Wars. Here the player
+                chooses to play against a Bikini Bottom Show character.
+                Rock, Paper, Scissors, Lizard, Spock is an extension of the classic game of chance, Rock, Paper,
+                Scissors,
+                created by Sam Kass and Karen Bryla
+              </p>
+            </div>
+            <div class="img-wrapper">
+              <div class="img slide-in from-right">
+                <a href="https://alerebal.github.io/codeInstitutePortfolio2/" target="_blank">
+                  <img src="src/assets/img/bob-theme-600.png" alt="Bikini Bottom game photo" style="--i:1;--j:0" />
+                  <img src="src/assets/img/bob-theme-600.png" alt="Bikini Bottom game photo" style="--i:0;--j:1" />
+                  <img src="src/assets/img/bob-theme-600.png" alt="Bikini Bottom game photo" style="--i:-1;--j:2" />
+                  <div class="span">HTML, CSS and Javascript</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <p>
+              <a href="https://alerebal.github.io/codeInstitutePortfolio2/" target="_blank">
+                <p>Go to the page</p>
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/alerebal/codeInstitutePortfolio2" target="_blank">
+                <p>Page code</p>
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <article>
           <div class="split fade-in">
             <div class="img-wrapper">
               <div class="img slide-in from-left">
                 <a href="https://css-effects-nine.vercel.app/" target="_blank">
-                  <img src="src/assets/img/css-effects.png" alt="vegetarian photo" 
-                  style="--i:1;--j:0"
-                  />
-                  <img src="src/assets/img/css-effects.png" alt="vegetarian photo" 
-                  style="--i:0;--j:1"
-                  />
-                  <img src="src/assets/img/css-effects.png" alt="vegetarian photo" 
-                  style="--i:-1;--j:2"
-                  />
+                  <img src="src/assets/img/css-effects.png" alt="vegetarian photo" style="--i:1;--j:0" />
+                  <img src="src/assets/img/css-effects.png" alt="vegetarian photo" style="--i:0;--j:1" />
+                  <img src="src/assets/img/css-effects.png" alt="vegetarian photo" style="--i:-1;--j:2" />
                   <div class="span">CSS and JS</div>
                 </a>
               </div>
@@ -129,225 +224,112 @@
                 Parallax effect, anime background, liquid text, graphics, and 2D to 3D convert images.
               </p>
             </div>
-            
           </div>
           <div class="links">
             <p>
-              <a href="https://alerebaldev.github.io/css-effects/" target="_blank"
-                ><p>Go to the page</p>
+              <a href="https://alerebaldev.github.io/css-effects/" target="_blank">
+                <p>Go to the page</p>
               </a>
             </p>
             <p>
-              <a
-                href="https://github.com/alerebal/css-effects"
-                target="_blank"
-                ><p>Page code</p>
+              <a href="https://github.com/alerebal/css-effects" target="_blank">
+                <p>Page code</p>
               </a>
             </p>
           </div>
+        </article>
 
-        <div class="split fade-in">
-          <div>
-            <h3 id="ecommerce">Ecommerce store</h3>
-            <p>
-              In this project I started to learn about Stripe and applied it in
-              a simple way. It does not work as I would like, I am trying to fix
-              some things. I am going to learn about Redux as my next goal and
-              apply it here as well. Another next step in this project will be
-              to make it responsive for small screens. It does right now, but
-              not how I like it. I used Node and Express on the backend, using
-              bcryptjs, json web token, cors and several more modules,
-              Cloudinary as the file server, MongoDb as the database, and
-              Angular on the frontend and Bootstrap.
-            </p>
+        <article>
+          <div class="split fade-in">
+            <div>
+              <h3 id="ecommerce">Ecommerce store</h3>
+              <p>
+                In this project I started to learn about Stripe and applied it in
+                a simple way. It does not work as I would like, I am trying to fix
+                some things. I am going to learn about Redux as my next goal and
+                apply it here as well. Another next step in this project will be
+                to make it responsive for small screens. It does right now, but
+                not how I like it. I used Node and Express on the backend, using
+                bcryptjs, json web token, cors and several more modules,
+                Cloudinary as the file server, MongoDb as the database, and
+                Angular on the frontend and Bootstrap.
+              </p>
+            </div>
+            <div class="img-wrapper">
+              <div class="img slide-in from-right">
+                <a href="https://ecommerce-henna.vercel.app/" target="_blank">
+                  <img src="src/assets/img/ecommerceLandCut.png" alt="vegetarian photo" style="--i:1;--j:0" />
+                  <img src="src/assets/img/ecommerceLandCut.png" alt="vegetarian photo" style="--i:0;--j:1" />
+                  <img src="src/assets/img/ecommerceLandCut.png" alt="vegetarian photo" style="--i:-1;--j:2" />
+                  <div class="span">MEAN Stack and Stripe</div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="img-wrapper">
-            <div class="img slide-in from-right">
+          <div class="links">
+            <p>
               <a href="https://ecommerce-henna.vercel.app/" target="_blank">
-                <img src="src/assets/img/ecommerceLandCut.png" alt="vegetarian photo" 
-                style="--i:1;--j:0"
-                />
-                <img src="src/assets/img/ecommerceLandCut.png" alt="vegetarian photo" 
-                style="--i:0;--j:1"
-                />
-                <img src="src/assets/img/ecommerceLandCut.png" alt="vegetarian photo" 
-                style="--i:-1;--j:2"
-                />
-                <div class="span">MEAN Stack and Stripe</div>
+                <p>Go to the page</p>
               </a>
-            </div>
-          </div>
-        </div>
-        <div class="links">
-          <p>
-            <a href="https://ecommerce-henna.vercel.app/" target="_blank"
-              ><p>Go to the page</p>
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/alerebal/ecommerce" target="_blank"
-              ><p>Frontend code</p>
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/alerebal/ecommerceBack" target="_blank"
-              ><p>Backend code</p>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="split fade-in">
-          <div class="img-wrapper">
-            <div class="img slide-in from-left">
-              <a
-                href="https://vegetarian-recipes-front.vercel.app/"
-                target="_blank">
-                <img src="src/assets/img/receipes.png" alt="vegetarian photo" 
-                style="--i:1;--j:0"
-                />
-                <img src="src/assets/img/receipes.png" alt="vegetarian photo" 
-                style="--i:0;--j:1"
-                />
-                <img src="src/assets/img/receipes.png" alt="vegetarian photo" 
-                style="--i:-1;--j:2"
-                />
-                <div class="span">MEAN Stack</div>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3>Vegetarian recipes</h3>
+            </p>
             <p>
-              I used Node and Express on the backend, using bcryptjs, json web
-              token, cors and several more modules, Cloudinary as the file
-              server, MongoDb as the database, and Angular on the frontend and
-              Bootstrap I made this app because my wife is a cooking lover, has
-              many recipes, and was on a low calorie diet, and she needed a
-              quick way to save and find all her recipes, because she does not
-              have much time to cook due to her work. I will continue working to
-              improve it, I like the result I have at this time.
+              <a href="https://github.com/alerebal/ecommerce" target="_blank">
+                <p>Frontend code</p>
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/alerebal/ecommerceBack" target="_blank">
+                <p>Backend code</p>
+              </a>
             </p>
           </div>
-        </div>
-        <div class="links">
-          <p>
-            <a
-              href="https://vegetarian-recipes-front.vercel.app/"
-              target="_blank"
-              ><p>Go to the page</p>
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/alerebal/recipes-front" target="_blank"
-              ><p>Frontend code</p>
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/alerebal/recipes-back" target="_blank"
-              ><p>Backend code</p>
-            </a>
-          </p>
-        </div>
-      </div>
+        </article>
 
-      <div class="container">
-        <div class="split fade-in">
-          <div>
-            <h3>Rock ImageShare</h3>
-            <p>
-              Creating this dynamic page, I used Node, Express and some modules
-              like: Express Handlebars, Morgan, Multer, moment and others as
-              well as a bit of jquery. I used Mongoose to connect to MongoDB.
-              For the styles I have used Bootstrap 4 and font-awesome, but
-              recently I changed bootstrap to pure css. I was learning how to
-              upload images at the time I created this page, I learn how to do
-              it with Multer and I send them to Cloudinary.
-            </p>
-          </div>
-          <div class="img-wrapper">
-            <div class="img slide-in from-right">
-              <a
-                href="https://alerebal-img-share.herokuapp.com/"
-                target="_blank"
-              >
-              <img src="src/assets/img/rockImageShare.png" alt="vegetarian photo" 
-              style="--i:1;--j:0"
-              />
-              <img src="src/assets/img/rockImageShare.png" alt="vegetarian photo" 
-              style="--i:0;--j:1"
-              />
-              <img src="src/assets/img/rockImageShare.png" alt="vegetarian photo" 
-              style="--i:-1;--j:2"
-              />
-                <div class="span">Node and Mongo</div>
-              </a>
+        <article>
+          <div class="split fade-in">
+            <div class="img-wrapper">
+              <div class="img slide-in from-left">
+                <a href="https://vegetarian-recipes-front.vercel.app/" target="_blank">
+                  <img src="src/assets/img/receipes.png" alt="vegetarian photo" style="--i:1;--j:0" />
+                  <img src="src/assets/img/receipes.png" alt="vegetarian photo" style="--i:0;--j:1" />
+                  <img src="src/assets/img/receipes.png" alt="vegetarian photo" style="--i:-1;--j:2" />
+                  <div class="span">MEAN Stack</div>
+                </a>
+              </div>
+            </div>
+            <div>
+              <h3>Vegetarian recipes</h3>
+              <p>
+                I used Node and Express on the backend, using bcryptjs, json web
+                token, cors and several more modules, Cloudinary as the file
+                server, MongoDb as the database, and Angular on the frontend and
+                Bootstrap I made this app because my wife is a cooking lover, has
+                many recipes, and was on a low calorie diet, and she needed a
+                quick way to save and find all her recipes, because she does not
+                have much time to cook due to her work. I will continue working to
+                improve it, I like the result I have at this time.
+              </p>
             </div>
           </div>
-        </div>
-        <div class="links">
-          <p>
-            <a href="https://alerebal-img-share.herokuapp.com/" target="_blank"
-              ><p>Go to the page</p>
-            </a>
-          </p>
-          <p>
-            <a
-              href="https://github.com/alerebal/rock-image-share"
-              target="_blank"
-              ><p>Page code</p>
-            </a>
-          </p>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="split fade-in">
-          <div class="img-wrapper">
-            <div class="img slide-in from-left">
-              <a
-                href="https://alerebal-notes-app.herokuapp.com/"
-                target="_blank"
-              >
-              <img src="src/assets/img/notesLand.png" alt="vegetarian photo" 
-              style="--i:1;--j:0"
-              />
-              <img src="src/assets/img/notesLand.png" alt="vegetarian photo" 
-              style="--i:0;--j:1"
-              />
-              <img src="src/assets/img/notesLand.png" alt="vegetarian photo" 
-              style="--i:-1;--j:2"
-              />
-              <div class="span">Node and Mongo</div>
-              </a>
-            </div>
-          </div>
-          <div>
-            <h3>Notes app</h3>
+          <div class="links">
             <p>
-              This page was created using Node, Express and several other
-              modules: Express Handlebars such as templates, bcryptjs to encrypt
-              user passwords, flash-connect to administrator messages, override
-              method to be able to use put and remove method of frontend and
-              passport form to users' navigations. I have used MongoDB as the
-              database, connecting it through Mongoose. For styles I have used
-              Bootstrap 4 and font-awesome
+              <a href="https://vegetarian-recipes-front.vercel.app/" target="_blank">
+                <p>Go to the page</p>
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/alerebal/recipes-front" target="_blank">
+                <p>Frontend code</p>
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/alerebal/recipes-back" target="_blank">
+                <p>Backend code</p>
+              </a>
             </p>
           </div>
-        </div>
-        <div class="links">
-          <p>
-            <a href="https://alerebal-notes-app.herokuapp.com/" target="_blank"
-              ><p>Go to the page</p>
-            </a>
-          </p>
-          <p>
-            <a href="https://github.com/alerebal/notes" target="_blank"
-              ><p>Page code</p>
-            </a>
-          </p>
-        </div>
+        </article>
+
       </div>
 
       <div class="anchor" id="myStudies"></div>
@@ -442,18 +424,14 @@
           <p>
             <i class="fa fa-mobile"></i> 083 432 6097
             <i class="fa fa-envelope"></i> ale.rebal@gmail.com
-            <a
-              href="https://www.linkedin.com/in/alejandro-rebalder%C3%ADa-4a6196176/"
-              target="_blank"
-              ><i class="fa fa-linkedin"></i
-            ></a>
-            <a href="https://github.com/alerebal" target="_blank"
-              ><i class="fa fa-github"></i
-            ></a>
+            <a href="https://www.linkedin.com/in/alejandro-rebalder%C3%ADa-4a6196176/" target="_blank"><i
+                class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/alerebal" target="_blank"><i class="fa fa-github"></i></a>
           </p>
         </div>
       </div>
     </section>
     <script src="src/main.js"></script>
-  </body>
+</body>
+
 </html>
